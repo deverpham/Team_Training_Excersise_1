@@ -5,6 +5,8 @@
     flex-wrap: wrap;
     position: relative;
     @include mobile-tablet() {
+        padding-top:50px;
+        padding-bottom: 50px;
         flex-direction: column;
     }
     &_img{
@@ -12,6 +14,11 @@
         display:flex;
         flex-direction: column;
         align-items: center;
+        padding-left: 63px;
+        padding-right: 164px;
+        @include mobile-tablet() {
+            padding:0;
+        }
         img{
             @include mobile-tablet() {
                 max-width: 290px;
