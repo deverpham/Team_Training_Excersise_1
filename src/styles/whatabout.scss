@@ -1,0 +1,61 @@
+html {
+    font-size: 62.5%; 
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+p,h1{
+    margin: 0;
+    padding: 0;
+}
+.what{
+    display: flex;
+    font-size: 2.2rem;
+    background: #F4F5F7;
+    padding: 77px 130px 76px 130px;
+    flex-wrap: wrap;
+    .whatabout {
+        width: 50%;
+
+    }
+}
+.logos{
+    margin: 30px 130px 100px 130px;
+    width: 80%;
+}
+.invision{
+    width: 50%;
+}
+.features{
+    font-size: 2.4rem;
+    display: flex;
+    align-items: center;
+}
+.content{
+    padding-left: 20px;
+}
+.Easily{
+    &__find{
+        font-size: 5.6rem;
+    }
+    &__Send{
+        flex-wrap: wrap;
+        width: 55%;
+       
+    }
+}
+.Easily__Send{
+    height: 102px;
+    
+}
+.title{
+    color: blue;
+}
+.abc {
+    margin-top: 20px;
+}
+.xyz{
+    margin-top: 30px;
+}
+
