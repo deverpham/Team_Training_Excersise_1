@@ -27,7 +27,7 @@
         }
 
     }
-    .s-title{
+    .built-title{
         margin-top:24px;
         font-size: 5.6rem;
         @include mobile-tablet() {
@@ -79,7 +79,7 @@
             }
         }
     }
-    .des_toolAndSer {
+    .des_toolAndUser {
         display: flex;
         flex-wrap: wrap;
         position: relative;
@@ -104,5 +104,4 @@
             text-decoration: none;
         }
     }
-
 }
