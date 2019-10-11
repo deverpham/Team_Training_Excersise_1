@@ -1,0 +1,6 @@
+$mq-tablet-landscape	: 570px !default;
+@mixin mobile-tablet {
+	@media only screen and  (max-width : $mq-tablet-landscape) {
+		@content;
+	}
+}
