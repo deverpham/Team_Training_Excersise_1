@@ -6,6 +6,7 @@ $mq-tablet-landscape	: 720px !default;
 
 @mixin mobile-tablet {
 	@media only screen and  (max-width : $mq-tablet-landscape) {
+       
 		@content;
     }
 }
@@ -18,7 +19,7 @@ html {
     font-size: 62.5%; //equal 10px
     font-family: 'Work Sans', sans-serif; 
     @include mobile-tablet() {
-        font-size: 60.5%;
+        font-size: 0.5rem;
     }
 }
 

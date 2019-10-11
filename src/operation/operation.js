@@ -1,7 +1,7 @@
 var getLibraries = document.getElementById("libraries")
 var getLibrariesBox = document.getElementById("libraries__box")
 var getBoxMenuStyle = document.getElementsByClassName("boxMenu_newStyle")
-x.addEventListener("click", function(){
+getLibraries.addEventListener("click", function(){
    
     if(getLibrariesBox.style.display == 'none'){
         //y.classList.add("z")
