@@ -1,6 +1,6 @@
 .communicate {
     padding: 130px 0;
-    background-color:#F2F2F2;
+    background-color:#FFFFFF;
     @include mobile-tablet() {
         flex-direction: column;
         padding-top: 50px;
@@ -94,6 +94,9 @@
                 padding-top: 33px;
                 margin:0;
             }
+        }
+        article:last-child{
+            margin-right: 0;
         }
         .learn_detail{
             padding-bottom: 11px;
