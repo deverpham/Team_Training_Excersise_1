@@ -33,7 +33,7 @@ html {
     display: flex;
     flex-wrap: wrap;
     @include mobile-tablet() {
-        padding: 12px 28px 18px 28px;
+        padding: 12px 15px 18px 15px;
     }
     
 }
@@ -62,15 +62,25 @@ html {
 }
 .wrapper {
     background: #F3C6BD;
-    padding: 39px 130px 77px 130px;
+    padding: 41px 0px 126px 130px;
     margin: 0px;
     @include mobile-tablet(){
         
         padding: 0px;
     }
 }
+nav {
+    padding: 0px 130px 0px 0px;
+    @include mobile-tablet() {
+        padding-right: 26px;
+    }
+}
 .nav__text--icon {
     font-size: 2rem;
+}
+.nav__text--blur {
+    font-size: 1.8rem;
+    color: rgba(43, 41, 45, 0.6);
 }
 
 a {
@@ -79,23 +89,46 @@ a {
     font-weight: bold;
 }
 
-ul { 
-    font-size: 1.8rem;
-    list-style: none;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    .toggle {
-        display: none; 
-        @include mobile-tablet() {
-            display: flex;
-        }
-    }
-    li, a, i {
-        @include mobile-tablet(){
+    .navigation {
+        font-size: 1.8rem;
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        .div--toggle {
             display: none; 
-        }   
-    }
+            @include mobile-tablet() {
+                display: flex;
+              
+                &::before {
+                    content: "";
+                    display: block;
+                    background: #000000;
+                    opacity: 0.15;
+                    position: absolute;
+                    height: 100%;
+                    top: 0;
+                    width: 3px;
+                    height: 72px;
+                }
+                .toggle {
+                    display: flex;
+                    margin-left: 26px;
+                }
+            }
+        }
+        li, a {
+            padding-right: 20px;
+            color: rgb(85, 79, 79);
+            @include mobile-tablet(){
+                display: none; 
+            }   
+        }
+        .active {
+            color: #2B292D;
+        }
+    
 }
 .branch {
     display: flex;
@@ -119,14 +152,10 @@ nav {
     li {
         margin-left: 30px;
     }
-    i {
-        margin-left: 20px;
-        margin-right: 20px;    
-    }
 } 
 
 .libraries__box {
-    display: flex;
+    display: none;
     flex-wrap: wrap;
     background: #FFFFFF;
     text-align: center;
@@ -155,12 +184,13 @@ nav {
 .wrapper__text {
     position: relative;
     padding-top: 81px;
+    z-index: 2;
     h1 {
         font-size: 8rem;
         width: 76.5rem;
         height: auto;
         line-height: 7.8rem;
-        z-index: 1;
+        z-index: 2;
         @include mobile-tablet() {
             width: 100%;
         }
@@ -176,13 +206,15 @@ nav {
     }
     img {
         position: absolute;
-        top: 0;
-        right: 0;
-        z-index: 0;
+        top: 90px;
+        right: 50px;
+        z-index: -1;
         @include mobile-tablet() {
             position: relative;
             width: 100%;
             bottom: 0;
+            top: 0;
+            right: 0;
         }
     }
     @include mobile-tablet() {

@@ -4,14 +4,14 @@
             <img src="../assets/images/Icon.png" id="Icon" />
             <div class="nav__text--icon">
                 <p><strong>Foundation</strong></p>
-                <p class = "nav_text--blur">Startup landing template</p>
+                <p class = "nav__text--blur">Startup landing template</p>
             </div>
         </div>
         <div>
-            <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">Stories</a></li>
-                <li><a href="">Libraries</a>
+            <ul class = "navigation" id = "navigation" >
+                <li id = "id--li"><a class = "active" href="">Home</a></li>
+                <li id = "id--li"><a href="">Stories</a></li>
+                <li id = "id--li"><a href="">Libraries</a>
                 </li>
                 <div id="libraries__box" class="libraries__box">
                     <div class="library__text">
@@ -33,8 +33,9 @@
                         <p> Become a better designer by learning this courses </p>
                     </div>
                 </div>
-                <img id = "libraries" class = "toggle" src="../assets/images/toggle.png"/>
-                <i class="fa fa-arrow-down" aria-hidden="true"></i>
+                <div class = "div--toggle">
+                    <img id = "libraries" class = "toggle" src="../assets/images/toggle.png"/>
+                </div>
                 <a id = "btn__main--blue" href="">Get Started</a>
             </ul>
         </div>
