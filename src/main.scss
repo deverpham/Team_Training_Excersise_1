@@ -17,6 +17,7 @@ a, a:active, a:focus {
     color:$textColor;
 }
 .btn--primary {
+    box-sizing: border-box;
     display: inline-block;
     cursor: pointer;
     background: $primaryColor;

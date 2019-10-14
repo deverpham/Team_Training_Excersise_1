@@ -1,6 +1,12 @@
 $mq-tablet-landscape	: 570px !default;
+$mq-ipad	: 1024px !default;
 @mixin mobile-tablet {
 	@media only screen and  (max-width : $mq-tablet-landscape) {
+		@content;
+	}
+}
+@mixin ipad {
+	@media only screen and (max-width : $mq-ipad) {
 		@content;
 	}
 }
