@@ -2,34 +2,49 @@
 .visitor{
     padding-top: 110px;
     padding-bottom:110px; 
+    @include mobile-tablet(){
+        padding-top: 50px;
+        padding-bottom:50px; 
+    }
     background-color: rgb(237,248,251);
-    &__content--head{
+    &__content{
         text-align:  center;
-        .content--visitor{
+        &__title{
             size: 2.2rem;
             margin-bottom: 24px;
             font-weight: bold;
+             @include mobile-tablet(){
+             margin-bottom: 18px;
+            }
         }
-        .content--early{
+        &--early{
             max-width: 555px;
             font-size: 2.4rem;
-            padding-top: 30px;
-            padding-bottom: 34px;
             margin: 0 auto;
-        }
-        .contain--btn--both{
+            margin-top: 30px;
+            margin-bottom: 34px;
             @include mobile-tablet(){
-                display: flex;
-                flex-direction: column;
-                a:last-child{
-                    margin-top: 12px;
-                }
+               margin: 18px 0 30px 0;
             }
+           
         }
-        @include mobile-tablet(){
-            h2{
+        h2{
+            @include mobile-tablet(){
                 font-size: 4.1rem;
+                margin: 0;
             }
+          
+        }
+       
+    }
+    &__wrapbtn{
+        @include mobile-tablet(){
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 40px;
+            a:last-child{
+                margin-top: 12px;
+            }  
         }
     }
     &__container--bottom{
@@ -52,10 +67,11 @@
             border-radius: 8px;
             p{
                 font-weight: bold;
+                padding-top: 22px;
             }
             @include mobile-tablet(){
                width: 100%;
-               margin-top: 15px;
+               margin-bottom: 15px;
             }
         }
         @include mobile-tablet(){
