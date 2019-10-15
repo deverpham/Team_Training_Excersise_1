@@ -34,6 +34,10 @@ a, a:active, a:focus {
     color: $primaryColor;
 }
 .container {
+    @include  ipad(){
+        padding-left: 65px;
+        padding-right: 65px;
+    }
     @include  mobile-tablet(){
         padding-left: 15px;
         padding-right: 15px;

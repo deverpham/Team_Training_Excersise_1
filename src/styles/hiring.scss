@@ -131,13 +131,17 @@
           background-color: #d5d4d5;
         }
       }
-
+      .fas__wrap{
+        @include mobile-tablet(){
+          border-radius: 0 7px 7px 0;
+          background-color: #d5d4d5;
+        }
+      }
       i {
         margin-top: 24px;
       }
       p:first-child {
         font-weight: bold;
-        width: 408px;
         margin-left: 25px;
         @include mobile-tablet() {
           width: 162px;
@@ -145,25 +149,26 @@
       }
       p:nth-child(2) {
         line-height: 1.8;
-        width: 250px;
         font-size: 1.8rem;
         color: rgb(160, 156, 160);
-        @include mobile-tablet() {
-          width: 199px;
-        }
-      }
-      .fa-angle-right::before {
-        padding-right: 20px;
+        padding-right: 40px;
       }
       .fa-angle-right {
+        color: #868686;
+        &::before{
+          padding-right: 20px;
+        }
         @include mobile-tablet() {
           margin-top: 60px;
           padding-left: 20px;
         }
       }
+
     }
     &__content {
+      width: 100%;
       display: flex;
+      justify-content: space-between;
       @include mobile-tablet() {
         flex-direction: column;
         p:nth-child(2) {
