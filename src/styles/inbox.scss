@@ -2,7 +2,7 @@
     padding:115px;
     background:#FCF0E3;
     display:flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     position: relative;
     @include mobile-tablet() {
         padding-top:50px;
@@ -14,7 +14,7 @@
         display:flex;
         flex-direction: column;
         align-items: center;
-        padding-left: 55px;
+        padding-left: 58px;
         padding-right: 162px;
         @include mobile-tablet() {
             padding:0;
