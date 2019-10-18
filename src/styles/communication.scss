@@ -8,12 +8,15 @@
     }
     &_info{
         display: flex;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
         position: relative;
+        @include mobile-tablet () {
+            flex-wrap: wrap;
+        }
     }
     &_content{
         max-width: 462px;
-        padding-right: 193px;
+        padding-right: 190px;
         @include mobile-tablet() {
             max-width: 100%;
             padding: 0;
@@ -81,13 +84,16 @@
     }
     .des_toolAndUser {
         display: flex;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
         position: relative;
         padding-top: 40px;
+        @include mobile-tablet () {
+            flex-wrap: wrap;
+        }
         &_detail{
             max-width: 360px;
             font-size: 1.76rem;
-            margin-right: 30px;
+            margin-right: 28px;
             margin-top:20px;
             @include mobile-tablet () {
                 max-width: 100%;

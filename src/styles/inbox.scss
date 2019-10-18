@@ -5,6 +5,7 @@
     flex-wrap: nowrap;
     position: relative;
     @include mobile-tablet() {
+        flex-wrap: wrap;
         padding-top:50px;
         padding-bottom: 50px;
         flex-direction: column;
