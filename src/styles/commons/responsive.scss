@@ -6,7 +6,8 @@ $mq-mobile-landscape	: 480px !default;
 $mq-tablet-portrait		: 768px !default;
 $mq-tablet-landscape	: 1024px !default;
 $mq-desktop				: 1382px !default;
-
+$mq-tablet-landscape	: 570px !default;
+$mq-ipad	: 1024px !default;
 // Both portrait and landscape
 @mixin mobile-only {
 	@media (max-width : $mq-mobile-landscape) {
@@ -135,8 +136,15 @@ $mq-desktop				: 1382px !default;
 	}
 }
 
+
+
 @mixin mobile-tablet {
 	@media only screen and  (max-width : $mq-tablet-landscape) {
+		@content;
+	}
+}
+@mixin ipad {
+	@media only screen and (max-width : $mq-ipad) {
 		@content;
 	}
 }
