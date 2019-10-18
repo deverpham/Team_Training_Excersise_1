@@ -1,0 +1,29 @@
+.contact {
+  background-color: #f4f5f7;
+  .title {
+    font-size: 2.5rem;
+    padding: 104px 325px;
+    text-align: center;
+    border-bottom: solid 1px #2b292d;
+  }
+  .formInput {
+    padding: 102px 432px;
+    .textArea{
+        padding-bottom: 126px;
+    }
+  }
+  .formInput p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+  .formInput input{
+    padding: 8px 15px;
+    margin-bottom: 32px;
+    width: 100%;
+  }
+  .btn--Send_a_Message{
+      width: 97%;
+      text-align: center;
+  }
+}

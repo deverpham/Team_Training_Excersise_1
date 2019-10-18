@@ -1,0 +1,116 @@
+.communicate {
+    padding: 130px 0;
+    background-color:#FFFFFF;
+    @include mobile-tablet() {
+        flex-direction: column;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    &_info{
+        display: flex;
+        flex-wrap: nowrap;
+        position: relative;
+        @include mobile-tablet () {
+            flex-wrap: wrap;
+        }
+    }
+    &_content{
+        max-width: 462px;
+        padding-right: 190px;
+        @include mobile-tablet() {
+            max-width: 100%;
+            padding: 0;
+        }
+    }
+    .title{
+        color:#0189D1;
+        font-weight: bold;
+        @include mobile-tablet() {
+            font-size: 2rem;
+        }
+
+    }
+    .built-title{
+        margin-top:24px;
+        font-size: 5.6rem;
+        @include mobile-tablet() {
+            margin-top:17px;
+            font-size: 4rem;
+        }
+    }
+    .description{
+        margin-top:30px;
+        font-size: 2.4rem;
+        @include mobile-tablet() {
+            margin-top:18px;
+        }
+    }
+    .btn-learnmore{
+        margin-top:39px;
+        margin-bottom: 87px;
+        color: #FFFFFF;
+        text-decoration: none;
+        @include mobile-tablet() {
+            margin-top:30px;
+            margin-bottom: 0;
+        }
+    }
+    &_img{
+        flex:1;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        @include mobile-tablet (){
+            margin-top: 40px;
+        }
+        img {
+            @include mobile-tablet () {
+                max-width: 290px;
+                width:100%;
+                height: auto;
+            }
+        }
+        .detail{
+            padding-top: 15px;
+            padding-left: 4em;
+            font-size: 1.6rem;
+            color: rgba(43, 41, 45, 0.6);
+            @include mobile-tablet () {
+                padding-left: 0;
+                padding-top: 17px;
+                padding-bottom: 40px;
+            }
+        }
+    }
+    .des_toolAndUser {
+        display: flex;
+        flex-wrap: nowrap;
+        position: relative;
+        padding-top: 40px;
+        @include mobile-tablet () {
+            flex-wrap: wrap;
+        }
+        &_detail{
+            max-width: 360px;
+            font-size: 1.76rem;
+            margin-right: 28px;
+            margin-top:20px;
+            @include mobile-tablet () {
+                max-width: 100%;
+                padding-top: 33px;
+                margin:0;
+            }
+        }
+        article:last-child{
+            margin-right: 0;
+        }
+        .learn_detail{
+            padding-bottom: 11px;
+        }
+        .link-learn{
+            font-weight: bold;
+            color: #3040C4;
+            text-decoration: none;
+        }
+    }
+}
