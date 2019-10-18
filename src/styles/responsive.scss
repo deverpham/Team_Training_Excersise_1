@@ -1,0 +1,8 @@
+$mq-mobile-portrait		: 320px !default;
+$mq-mobile-landscape	: 720px !default;
+
+@mixin mobile-tablet {
+	@media only screen and  (max-width : $mq-tablet-landscape) {
+		@content;
+	}
+}
