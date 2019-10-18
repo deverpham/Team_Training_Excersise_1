@@ -2,12 +2,17 @@
 @import './styles/commons/reset.scss';
 @import './styles/inbox.scss';
 @import './styles/communication.scss';
+@import './styles/headerContactUs.scss';
+@import './styles/contactUs.scss';
 
 body {
     font-size: 2.2rem;
     font-family: 'Work Sans', sans-serif;
 }
-
+a, a:active, a:focus {
+    text-decoration: none;
+    color:#2B292D;
+}
 .btn--primary {
     display: inline-block;
     cursor: pointer;

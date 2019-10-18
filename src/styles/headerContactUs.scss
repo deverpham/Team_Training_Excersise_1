@@ -1,0 +1,44 @@
+.headerContact {
+  padding: 5px 130px;
+  nav {
+    overflow: auto;
+  }
+  .brand {
+    padding: 8px 0px 3px 15px;
+    flex: 1;
+    display: flex;
+    justify-content: baseline;
+    width: fit-content;
+    float: left;
+  }
+  .brand div p {
+      color: rgba(43, 41, 45, 0.6);
+      font-size: 1.7rem;
+  }
+  .brand__info {
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    padding: 7px 0px 7px 10px;
+  }
+  .navigations {
+    display: flex;
+    float: right;
+  }
+  .navigations ul {
+    margin-top: 24px;
+  }
+  .navigations ul li {
+    font-size: 1.8rem;
+    display: inline;
+    margin-left: 50px;
+    color: #2b292d;
+  }
+  .navigations ul li.active {
+    font-weight: bold;
+  }
+  .navigations__register_btn {
+    margin-top: 13px;
+    margin-left: 56px;
+  }
+}
