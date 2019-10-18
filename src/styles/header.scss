@@ -32,7 +32,7 @@ html {
 }
 
 @mixin btn__main {
-  padding: 18px 15px 18px 15px;
+  padding: 18px 28px 18px 28px;
   margin: 12px 10px 12px 0px;
   text-align: center;
 }
@@ -41,7 +41,7 @@ html {
   display: flex;
   flex-wrap: wrap;
   @include mobile-tablet() {
-    padding: 12px 0px 18px 0px;
+    padding: 28px 0px 28px 0px;
   }
 }
 #btn__main--blue {
