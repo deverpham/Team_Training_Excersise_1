@@ -1,6 +1,6 @@
 $blue--linear: linear-gradient(
     180deg,
-    rgba(255, 255, 255, 0.05) 0%,
+    rgba(161, 50, 50, 0.05) 0%,
     rgba(255, 255, 255, 1e-5) 100%
   ),
   #3040c4;
@@ -11,14 +11,6 @@ $white--linear: linear-gradient(
     rgba(255, 255, 255, 1e-5) 100%
   ),
   #ffffff;
-$mq-tablet-landscape: 720px !default;
-
-@mixin mobile-tablet {
-  @media only screen and (max-width: $mq-tablet-landscape) {
-    @content;
-  }
-}
-
 * {
   margin: 0px;
   padding: 0px;
@@ -29,6 +21,8 @@ html {
   @include mobile-tablet() {
     font-size: 0.5rem;
   }
+
+  
 }
 
 @mixin btn__main {
@@ -210,6 +204,8 @@ nav {
     z-index: 2;
     @include mobile-tablet() {
       width: 100%;
+      font-size: 5rem;
+      line-height: 50px;
     }
   }
   p {
