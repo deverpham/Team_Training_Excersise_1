@@ -19,6 +19,7 @@ h5{
 @mixin distance {
     margin-left: 15px;
     margin-right: 15px; 
+    box-sizing: border-box; 
 }
 @mixin faded {
     opacity:0.3;

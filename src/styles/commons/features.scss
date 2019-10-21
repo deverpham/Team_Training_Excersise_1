@@ -30,16 +30,20 @@ ul{
           color: green;
         }
         &__title{
-          width: 80%;
+          width: 462px;
         }
         &__desc{
-          width: 65%;
+          max-width: 461px;
         }   
         
     }
     &__distance{
         margin-top: 30px;
       }
+   &__invision{
+     position: absolute;
+     right: 0;
+   }
 }
 
   .acquire{
@@ -49,8 +53,8 @@ ul{
       color: blue;
     }
     &__desc{
-      font-size: 1.8rem;
-      width: 63%;
+      font-size: 1.8rem;  
+      max-width: 459px;
     }
     &__Engage,&__Develop{
       font-size: 2.2rem;
@@ -70,7 +74,7 @@ ul{
       &__title{
         font-size: 4rem;
         margin-top: 15px;
-       
+       max-width: 290px;
         
       }
       &__desc{
@@ -96,6 +100,7 @@ ul{
       }
        &__better{
         @include faded;
+        margin-top: 20px;
        }
       &__Engage{
         color: green;
@@ -117,6 +122,7 @@ ul{
     &__knowledge{
       font-size: 1.4rem;
       @include faded;
+      margin-top: 20px;
     }
   }
 }
