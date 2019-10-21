@@ -1,0 +1,94 @@
+.inbox {
+    padding:115px;
+    background:#FCF0E3;
+    display:flex;
+    flex-wrap: nowrap;
+    position: relative;
+    @include mobile-tablet() {
+        flex-wrap: wrap;
+        padding-top:50px;
+        padding-bottom: 50px;
+        flex-direction: column;
+    }
+    &_img{
+        flex:1;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 55px;
+        padding-right: 162px;
+        @include mobile-tablet() {
+            padding:0;
+        }
+        img{
+            @include mobile-tablet() {
+                max-width: 290px;
+                width:100%;
+                height: auto;
+            }
+        }
+        .detail{
+            padding-top: 15px;
+            font-size: 1.6rem;
+            color: rgba(43, 41, 45, 0.6);
+            @include mobile-tablet () {
+                display: none;
+            }
+        }
+    }
+    &__content {
+        max-width: 510px;
+        @include mobile-tablet() {
+            max-width:100%;
+        }
+        float:right;
+        @include mobile-tablet() {
+            margin-top:32px;
+        }
+        .title {
+            color:#F1592B;
+            font-weight: bold;
+        }
+        .manage-title {
+            margin-top:24px;
+            font-size: 5.6rem;
+            @include mobile-tablet() {
+                margin-top:17px;
+                font-size:4rem;
+            }
+        }
+        .desc {
+            margin-top:30px;
+            font-size: 2.4rem;
+            @include mobile-tablet() {
+                margin-top:18px;
+            }
+        }
+        .feedback {
+            background:#FFFFFF;
+            padding:30px;
+            margin-top:44px;
+            &__message {
+                font-size:2rem;
+            }
+            border-bottom: 4px solid #0185D0;
+        }
+        .feedback__info {
+            display:flex;
+            margin-top:26px;
+            align-items: center;
+            img {
+                width:40px;
+                height:40px;
+            }
+            div {
+                margin-left:1rem;
+                font-size:1.6rem;
+                .career {
+                    color:#2B292D;
+                    margin-top:5px;
+                }
+            }
+        }
+    }
+}
