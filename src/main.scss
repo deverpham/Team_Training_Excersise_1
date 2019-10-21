@@ -1,3 +1,26 @@
+@import "./styles/whatabout.scss";
+@import "./styles/commons/responsive.scss";
+@import "./styles/commons/variables.scss";
+@import"./styles/commons/features.scss";
+
+
+html{
+    font-size: 62.5%;
+}
+ 
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Work Sans;
+}
+p,h1{
+    margin: 0;
+    padding: 0;
+}
+ul{
+  list-style: none;
+}
+
 @import './styles/commons/responsive.scss';
 @import './styles/commons/reset.scss';
 @import './styles/inbox.scss';
@@ -37,10 +60,7 @@ a, a:active, a:focus {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-html{
-    font-size: 62.5%;
-}
- 
+
     
 a, a:active, a:focus {
     text-decoration: none;

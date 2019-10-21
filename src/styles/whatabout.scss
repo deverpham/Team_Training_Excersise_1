@@ -1,0 +1,45 @@
+html {
+    font-size: 62.5%; 
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Work Sans;
+}
+p,h1{
+    margin: 0;
+    padding: 0;
+}
+ul{
+  list-style: none;
+}
+.what {
+    background: #F4F5F7;    
+    padding: 77px 30px 77px 130px;
+    display: flex;
+    flex-wrap: wrap;
+   
+    margin: auto;
+    &__about {
+      width:50%;
+      &__building{
+        margin-top: 20px;
+        width: 90%;
+      }
+
+    }
+    
+  }
+    
+    @media only screen and (max-width: 1024px) {
+      .what { 
+       width: 100%;
+       padding: 0px;
+       &__about {
+          width:100%;
+          margin: 46px 15px 20px 15px;
+        }
+      }       
+    }
+  
+

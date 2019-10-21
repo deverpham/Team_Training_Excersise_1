@@ -1,0 +1,129 @@
+html {
+    font-size: 62.5%; 
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Work Sans;
+}
+p,h1{
+    margin: 0;
+    padding: 0;
+}
+ul{
+  list-style: none;
+}
+.img-rss{
+    margin: 30px 130px 100px 130px;
+  }
+.features{
+    display: flex;
+    &__eyes{
+      height: 166px;  
+      width: 96px;
+      position: relative;
+      top: 258px;
+    }
+    &__main{
+        margin-left: 40px;
+        &__name{
+          color: green;
+        }
+        &__title{
+          width: 462px;
+        }
+        &__desc{
+          max-width: 461px;
+        }   
+        
+    }
+    &__distance{
+        margin-top: 30px;
+      }
+   &__invision{
+     position: absolute;
+     right: 0;
+   }
+}
+
+  .acquire{
+    margin-top: 42px;
+    margin-bottom: 103px;
+    &__title{
+      font-size: 2.2rem;
+      color: blue;
+    }
+    &__desc{
+      font-size: 1.8rem;  
+      max-width: 459px;
+    }
+    &__Engage,&__Develop{
+      font-size: 2.2rem;
+      
+    }
+    &__distance{
+      margin-top: 20px;
+    }
+    
+  }
+  @media only screen and (max-width: 1024px){
+    .features__main{
+      flex-wrap: wrap;
+      max-width: 100%;
+      @include distance;
+     
+      &__title{
+        font-size: 4rem;
+        margin-top: 15px;
+       max-width: 290px;
+        
+      }
+      &__desc{
+        width: 100%;
+        margin-top: 15px;
+      }
+    }
+      .img-rss,.features__eyes,.features__invision,.line1,.line,.acquire{
+        display: none;
+      }
+  }
+  .hidden{
+    display: none;
+  }
+  @media only screen and (max-width: 1024px){
+    .hidden{
+      display: inherit;
+      @include distance;
+      &__ouch{
+        width: auto;
+        height: auto;
+       margin-top: 30px;
+      }
+       &__better{
+        @include faded;
+        margin-top: 20px;
+       }
+      &__Engage{
+        color: green;
+        margin-top: 40px;
+        
+      }
+      &__Engagewith{
+        margin-top: 17px;
+      }
+      &__Send{
+        width: 100%;
+        margin-top: 17px;
+    }
+    &__ouch1{
+      width: auto;
+      height: auto;
+      margin-top: 30px;
+    }
+    &__knowledge{
+      font-size: 1.4rem;
+      @include faded;
+      margin-top: 20px;
+    }
+  }
+}
