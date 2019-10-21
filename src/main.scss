@@ -1,0 +1,17 @@
+@import './styles/commons/reset.scss';
+@import './styles/commons/responsive.scss';
+@import './styles/commons/variables.scss';
+@import './styles/test.scss';
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Work Sans', sans-serif;
+}
+.container{
+    @include mobile-tablet(){
+        padding-left: 15px;
+        padding-right: 15px;
+        
+    }
+}
