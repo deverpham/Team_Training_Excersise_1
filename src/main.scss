@@ -1,2 +1,21 @@
 @import "./styles/whatabout.scss";
+@import "./styles/commons/responsive.scss";
+@import "./styles/commons/variables.scss";
+@import"./styles/commons/features.scss";
 
+
+html {
+    font-size: 62.5%; 
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Work Sans;
+}
+p,h1{
+    margin: 0;
+    padding: 0;
+}
+ul{
+  list-style: none;
+}

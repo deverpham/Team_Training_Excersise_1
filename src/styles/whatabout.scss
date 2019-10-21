@@ -4,24 +4,30 @@ html {
 *{
     margin: 0;
     padding: 0;
+    font-family: Work Sans;
 }
 p,h1{
     margin: 0;
     padding: 0;
+}
+ul{
+  list-style: none;
 }
 .what {
     background: #F4F5F7;    
     padding: 77px 30px 77px 130px;
     display: flex;
     flex-wrap: wrap;
-    font-size: 2.2rem; 
    
     margin: auto;
     &__about {
       width:50%;
-      
+      &__building{
+        margin-top: 20px;
+      }
 
     }
+    
   }
     
     @media only screen and (max-width: 1024px) {
@@ -30,75 +36,9 @@ p,h1{
        padding: 0px;
        &__about {
           width:100%;
-          padding: 46px 15px 20px 15px;
+          margin: 46px 15px 20px 15px;
         }
       }       
     }
   
-.img-rss{
-  margin: 30px 130px 100px 130px;
-}
-.features{
-  display: flex;
-  .features__eyes{
-    height: 166px;  
-    width: 96px;
-    position: relative;
-    top: 258px;
-  }
-}
- 
-.features__main{
-  .name{
-    font-size: 2.2rem;
-    color: green;
-  }
-  .title{
-    font-size: 5.6rem;
-  }
-  .desc{
-    font-size: 2.6rem;
-  }
-  .abc{
-    margin-top: 30px;
-  }
-  
-}
 
-.acquire{
-  margin-top: 42px;
-  &__title{
-    font-size: 2.2rem;
-    color: blue;
-  }
-  &__desc{
-    font-size: 1.8rem;
-    width: 50%;
-  }
-  .Engage,.Develop{
-    font-size: 2.2rem;;
-  }
-  .xyz{
-    margin-top: 20px;
-  }
-  .ouch{
-    display: none;
-  }
-}
-@media only screen and (max-width: 1024px){
-  .features__main{
-    flex-wrap: wrap;
-    max-width: 100%;
-    margin-left: 15px;
-    .title{
-      font-size: 4rem;
-    }
-  
-  }
-    .img-rss,.features__eyes,.features__invision,.line1,.line,.acquire{
-      display: none;
-    }
-}
-.hidden_content{
-  display: none;
-}
