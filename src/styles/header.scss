@@ -15,14 +15,13 @@ $white--linear: linear-gradient(
   margin: 0px;
   padding: 0px;
 }
+
 html {
   font-size: 62.5%; //equal 10px
   font-family: "Work Sans", sans-serif;
   @include mobile-tablet() {
     font-size: 0.5rem;
   }
-
-  
 }
 
 @mixin btn__main {
@@ -262,7 +261,6 @@ nav {
 }
 
 .a--show {
-  
   display: flex !important;
   padding-right: 13px;
   font-size: 3rem;
