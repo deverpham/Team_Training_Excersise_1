@@ -1,6 +1,6 @@
 
 function emptyInput() {
-    var str = "This input not empty";
+  var str = "This input not empty";
     var str1 = "This input must be email";
     var str2 = "This input length must be greater than 6 characters ";   
     var input1 = document.getElementById("txt_email");
@@ -37,7 +37,7 @@ function emptyInput() {
     }
     
     
-    if(nhap2.length > 10 ){
+    if(nhap2.length < 6 ){
         document.getElementById("question").innerHTML = str2;
         document.getElementById("question").style.color = 'red';
         txt_question.style.borderColor='red';
@@ -46,9 +46,5 @@ function emptyInput() {
         document.getElementById("question").innerHTML = "";
     }
     
-
-    
-
-
 
 }
