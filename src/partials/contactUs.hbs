@@ -1,0 +1,22 @@
+<section class='contact'>
+    <div class='title'>
+        <h1>Contact Us</h1>
+    </div>
+    <div class='formInput'>
+        <div>
+            <form action="" onsubmit="event.preventDefault()">
+                <p class='s-title'>Your Email Address</p>
+                <input id='email' type='email' placeholder='something@wedsite.com' name='email' required />
+                <p class='error' id='email_emplty'>This input not empty</p>
+                <p class='error' id='email_mustBeEmail'>This input must be email</p>
+                <p class='s-title'>Subject</p>
+                <input id='text-box' type='text' placeholder='Question about your article' required minlength="16"/>
+                <p class='error' id='subject_empty'>This input not empty</p>
+                <p class='error' id='subject16character'>This input length must be greater than 16 charaters</p>
+                <p class='s-title'>Message</p>
+                <input id='text-area' class='textArea' type='text' placeholder='Your message start with...' required minlength="16"/></br>
+                <button id='btn_send_mess' class='btn--primary btn--Send_a_Message' type="submit">Send a Message </button>
+            </form>
+        </div>
+    </div>
+</section>

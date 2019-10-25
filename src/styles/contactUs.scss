@@ -1,15 +1,43 @@
-.contact {
+.contact{
   background-color: #f4f5f7;
+  @include ipad() {
+    padding-left: 65px;
+    padding-right: 65px;
+  }
+  @include mobile-tablet() {
+    padding-bottom:50px ;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
   .title {
     font-size: 2.5rem;
     padding: 104px 325px;
     text-align: center;
     border-bottom: solid 1px #2b292d;
+    @include mobile-tablet() {
+      padding: 0;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      margin-bottom: 22px;
+      width:100%;
+      font-size: 2rem;
+    }
   }
   .formInput {
     padding: 102px 432px;
-    .textArea{
-        padding-bottom: 126px;
+    @include mobile-tablet() {
+      padding: 0;
+      width: 100%;
+    }
+    .textArea {
+      padding-bottom: 126px;
+    }
+    .s-title{
+      margin-top:32px ;
+    }
+    .error{
+      color: red;
+      display: none;
     }
   }
   .formInput p {
@@ -17,13 +45,17 @@
     font-weight: bold;
     margin-bottom: 8px;
   }
-  .formInput input{
-    padding: 8px 15px;
-    margin-bottom: 32px;
+  .formInput input {
+    padding-top: 8px;
+    padding-bottom: 8px;
     width: 100%;
   }
-  .btn--Send_a_Message{
-      width: 97%;
-      text-align: center;
+  .btn--Send_a_Message {
+    width: 100%;
+    text-align: center;
+    margin-top: 32px;
+    @include mobile-tablet() {
+      width: 98.6%;
+    }
   }
 }

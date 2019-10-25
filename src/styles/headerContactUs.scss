@@ -1,20 +1,28 @@
 .headerContact {
-  padding: 5px 130px;
+  padding: 3px 130px;
   nav {
     overflow: auto;
+    padding: 0;
   }
   .brand {
-    padding: 8px 0px 3px 15px;
-    flex: 1;
     display: flex;
     justify-content: baseline;
     width: fit-content;
     float: left;
   }
+  .brand div strong {
+    @include  mobile-tablet(){
+      margin-top: 16px;
+    }
+  }
   .brand div p {
       color: rgba(43, 41, 45, 0.6);
       font-size: 1.7rem;
+      @include  mobile-tablet(){
+        display: none;
+      }
   }
+
   .brand__info {
     font-size: 2rem;
     display: flex;
@@ -23,22 +31,35 @@
   }
   .navigations {
     display: flex;
+    justify-content: space-between;
     float: right;
+    &_list{
+      display: flex;
+      @include  mobile-tablet(){
+        display: none;
+      }
+    }
+    .div--toggle{
+      display: none;
+      @include  mobile-tablet(){
+        display: inherit;
+      }
+    }
   }
   .navigations ul {
-    margin-top: 24px;
+    margin-top: 20px;
   }
   .navigations ul li {
     font-size: 1.8rem;
     display: inline;
-    margin-left: 50px;
+    margin: 0;
+    padding-right: 55px;
     color: #2b292d;
   }
   .navigations ul li.active {
     font-weight: bold;
   }
   .navigations__register_btn {
-    margin-top: 13px;
-    margin-left: 56px;
+    margin-top: 6px;
   }
 }
