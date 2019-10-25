@@ -65,6 +65,43 @@ var emailEmplty = document.getElementById('email_emplty')
 var mustBeEmail = document.getElementById('email_mustBeEmail')
 var subjectEmpty = document.getElementById('subject_empty')
 var subjectCharacter =document.getElementById('subject16character')
+var check = false
+var check1 = false 
+email.addEventListener('blur',function(){
+    if(email.value ==''){
+        email.style.borderColor ='red'
+        emailEmplty.style.display ='inline'
+        check = false
+    }else if(email.value != '' && email.value.includes('@gmail.com') == false){
+        emailEmplty.style.display ='none'
+        email.style.borderColor ='red'
+        mustBeEmail.style.display ='inline'
+        check = false
+    }else {
+        email.style.borderColor ='white'
+        emailEmplty.style.display ='none'
+        mustBeEmail.style.display ='none'
+        check = true
+    }
+})
+text_box.addEventListener('blur',function(){
+    if(text_box.value==''){
+        text_box.style.borderColor = 'red'
+        subjectEmpty.style.display ='inline'
+        check1 = false
+    }else if(text_box.value.length < 16 ){
+        text_box.style.borderColor = 'red'
+        subjectCharacter.style.display ='inline'
+        subjectEmpty.style.display ='none'
+        check1 = false
+    }else
+    {
+        text_box.style.borderColor = 'white'
+        subjectCharacter.style.display ='none'
+        subjectEmpty.style.display ='none'
+        check1 = true
+    }
+})
 btnClick.addEventListener('click', function(){
     if(email.value ==''){
         email.style.borderColor ='red'
@@ -91,6 +128,9 @@ btnClick.addEventListener('click', function(){
         text_box.style.borderColor = 'white'
         subjectCharacter.style.display ='none'
         subjectEmpty.style.display ='none'
+    }
+    if(check == true && check1 == true){
+        btnClick.disabled = false
     }
 })
 
