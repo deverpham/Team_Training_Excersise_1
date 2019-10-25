@@ -11,6 +11,11 @@
     }
   }
 }
+
+.warn {
+  color: red;
+  font-size: 1.6rem;
+}
 #mess__btn {
   @extend #btn__main--blue;
   margin-right: 0px;
@@ -20,6 +25,10 @@
   .contact {
     h1 {
       font-size: 5.6rem;
+    }
+    p {
+      font-size: 1.6rem;
+      color: red;
     }
     width: 100%;
     text-align: center;
@@ -44,13 +53,9 @@
     input {
       padding: 10px;
       margin-top: 8px;
-      margin-bottom: 32px;
       border: 1px solid rgba(0, 0, 0, 0.2);
       box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.1);
       border-radius: 2px;
-      ::placeholder {
-        display: flex;
-      }
     }
     .message {
       height: 168px;

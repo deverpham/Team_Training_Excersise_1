@@ -47,16 +47,16 @@
         </div>
 
         <div>
-            <form action="action_page">
+            <form action="./" onsubmit="event.preventDefault()">
                 <p><strong>Your email address</strong></p> 
-                <input type="email" class="email" placeholder="something@website.com">
-                <p id = "warn__Etext"></p>
+                <input type="email" class="email" placeholder="something@website.com" required maxlength="16" oninvalid ="setCustomValidity('Must be email and no longer than 16 letters')">
+                <p id = "warn__Etext" class = "warn"></p>
                 <p><strong>Subject</strong></p> 
-                <input type="text" class="subject" placeholder="Question about your article">
+                <input type="text" class="subject" placeholder="Question about your article" required maxlength="16" oninvalid ="setCustomValidity('no longer than 16 letters')">
                 <p><strong>Message</strong></p>
-                <input type="text" class="message" placeholder="Your message start with">
-                <p id = "warn__Stext"></p>
-                <a id = "mess__btn" >Send a Message</a>
+                <input type="text" class="message" placeholder="Your message start with" required minlength="100" oninvalid ="setCustomValidity('greater than 100 letters')">
+                <p id = "warn__Stext" class = "warn"></p>
+                <button id = "mess__btn" type = "submit">Send a Message</button>
             </form>
         </div>
     </section>
