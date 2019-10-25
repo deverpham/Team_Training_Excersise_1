@@ -5,10 +5,16 @@
 body{
     width: 100%;
 }
+                /*FOUNDATION*/
 .header{
     padding-top: 3rem;
     padding-bottom: 1rem;
     width: 100%;
+    @include mobile-tablet(){
+        display: none;
+        width: 0%;
+        padding: 0;
+    }
     &__wrap{
         display: flex;
         justify-content: space-between;
@@ -37,7 +43,7 @@ body{
             &__nav{
                 padding-top: 1.2rem;
                 font-size: 16px;   
-                width: 55%;     
+                width: 48%;     
                 margin: 0 auto;
                 ul{
                     justify-content: space-between;
@@ -78,24 +84,24 @@ body{
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
+                    /* CONTACT*/
 
 .contact{
     padding-top: 8rem;
     padding-bottom: 8rem;
     width: 100%;
     background-color: #F4F5F7;
+    @include mobile-tablet(){
+        width: 100%;
+        background-color: #C4C4C4;;
+        padding-bottom: 5rem;
+        padding-top: 6rem;
+    }
     &__wrap{
+        @include mobile-tablet(){
+            width: 90%;
+            margin: 0 auto;
+        }
        &__brand{
            text-align: center;
            font-family: Work Sans;
@@ -104,16 +110,33 @@ body{
             font-size: 56px;
             line-height: 56px;
             color: #2B292D;
+            @include mobile-tablet(){
+                width: 100%;
+                color: #000000;
+                padding-bottom: 40px;
+            }
+       }
+       &--smallline{
+           display: none;
+           @include mobile-tablet(){
+             
+           }
        }
        &__img{
             padding-top: 80px;
             padding-bottom: 80px;
+            @include mobile-tablet(){
+                display: none;
+            }
         }
         &__singIn{
             width: 37%;
             margin: 0 auto;
             font-size: 16px;
             color: #2C3241;
+            @include mobile-tablet(){
+                width: 100%;
+            } 
             &__email{
                 line-height: 1.7;
                 &__input{
@@ -139,9 +162,9 @@ body{
                 &__input{
                     font-size: 17px;
                     margin-top: 0.8rem;
-                    height: 15rem;
+                    padding-bottom: 11rem;
                     width: 100%;
-                    margin-bottom: 2.5rem;;
+                    margin-bottom: 2.5rem;
                 }
             }
             &__button{
@@ -152,10 +175,11 @@ body{
                 display: inline-block;
                 font-size: 17px;              
                 text-align: center;
-                line-height: 3.5rem;
+                line-height: 4rem;
                 &__Send{
                     font-family: Work Sans;
-                    font-style: normal;       
+                    font-style: normal;    
+                    font-weight: bold;   
                     color: #FFFFFF;
                     text-decoration: none;
                 }
@@ -164,21 +188,18 @@ body{
     }
 }
 
-
-
-
-
-
-
-
-
-
+                    /*FOOTER*/
 
 .footer{
     padding-top: 4rem;
     padding-bottom: 5rem;
     width: 100%;
     background: #FFFFFF;
+    @include mobile-tablet(){
+        display: none;
+        width: 0%;
+        padding: 0;
+    }
     &__wrap{
         margin: 0 auto;
         display: flex;
@@ -187,13 +208,10 @@ body{
         color:rgba(43, 41, 45, 0.6);
         font-size: 1.2rem;
         padding-left: 7rem;
-    }
         &__left{
-            width: 50%;
-        }
+            width: 50%;      
             &__logo{
-                display: flex;                                                          
-            }
+                display: flex;          
                 &__Foundation{
                     padding-top: 10px;
                     font-weight: bold;
@@ -209,50 +227,41 @@ body{
                     color:rgba(43, 41, 45, 0.6);
                     padding-bottom:  0.2rem
                 }
-            
+            }
             &__text{
                 padding-top: 1rem;
                 color:rgba(43, 41, 45, 0.6);
                 font-size: 16px;
-                line-height: 22px;
-               
+                line-height: 22px;            
             }
             &__img{
                 padding-top: 3rem;
-                padding-bottom: 4.5rem;
-              
-                }
+                padding-bottom: 4.5rem;             
+            }
+        }
         &__right{
             padding-right: 6rem;
             width: 19%;
             padding-top: 1rem;
             color: #2B292D;
             font-size: 1.2rem;
-            line-height: 2;
-          
-            }
+            line-height: 2;          
             &__text__right{
                 color:rgba(43, 41, 45, 0.6);
                 padding-top: 1rem;
                 font-size: 16px;
-                line-height: 2;
-               
+                line-height: 2;             
             }
-        
+        }
+    }
     &__line{
         width: auto;
-       
-        }
-        &__smallline{
-            display: none;
-        }
-    
+    }
     &__bottom{
         width: 80%;
         margin: 0 auto;
         display: flex;
         justify-content: space-between;
-      
         &__TPL{
             padding-top: 1.5rem ;   
             color:rgba(43, 41, 45, 0.6);
@@ -261,18 +270,15 @@ body{
             font-size: 14px;
             justify-content: space-between;
             padding-left: 32px;
-          
             .p{
                 margin-left: 1rem;
-                
             }
         }
         &__img{
             width: 11%;
             padding-top: 1.5rem;
-         
             a{
-                margin-right:2em ;
+                margin-right: 2rem;
             }
         }
     }
