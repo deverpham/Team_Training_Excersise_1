@@ -19,6 +19,7 @@
 #mess__btn {
   @extend #btn__main--blue;
   margin-right: 0px;
+  background: bisque;
 }
 .Wrapper__text {
   background: #f4f5f7;
@@ -42,6 +43,7 @@
   .login__btn--add {
     padding: 0px;
     margin: 0px;
+   
   }
   form {
     display: flex;
