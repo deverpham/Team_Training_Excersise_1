@@ -1,6 +1,5 @@
+<!--FOUNDATION-->
 
-                            <!--FOUNDATION-->
-                            
 <section class="header">
     <div class="header__wrap">
         <div class="header__wrap__left">
@@ -34,7 +33,7 @@
     </div>
 </section>
 
-                                <!--CONTACT-->
+<!--CONTACT-->
 
 <section class="contact">
     <div class="contact__wrap">
@@ -53,28 +52,30 @@
                 <input id="txt_email" type="text" class="contact__wrap__singIn__email__input"
                     placeholder="something@website.com" />
             </div>
-            <p id="email"></p>
+            <p id="email" class = "contact__warn"></p>
             <div class="contact__wrap__singIn__subject">
                 <p class="contact__wrap__singIn__subject__text"><strong>Subject</strong></p>
                 <input id="txt_question" type="text" class="contact__wrap__singIn__subject__input"
                     placeholder="Question about your article" />
             </div>
-            <p id="question"></p>
+            <p id="question" class = "contact__warn"></p>
             <div class="contact__wrap__singIn__message">
                 <p class="contact__wrap__singIn__message__text"><strong>Message</strong></p>
                 <input id="txt_message" type="text" class="contact__wrap__singIn__message__input"
                     placeholder="Your message start with..." />
             </div>
-            <p id="message"></p>
-            <div class="contact__wrap__singIn__button">
-                <button onclick='emptyInput()' type="submit" class="contact__wrap__singIn__button__Send" >Send a Message</button>
-            </div>
-           
+            <p id="message" class = "contact__warn"></p>
+            <form id="myForm" action="" onsubmit="">
+                <div class="cont1ct__wrap__singIn__button">
+                    <button id="btn" type="submit" onclick='emptyInput()' disabled
+                        class="contact__wrap__singIn__button__Send">Send a Message</button>
+                </div>
+            </form>
         </div>
     </div>
 </section>
 
-                                <!--FOOTER-->
+<!--FOOTER-->
 
 <section class="footer">
     <div class="footer__wrap">
